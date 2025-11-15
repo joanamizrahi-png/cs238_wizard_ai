@@ -37,7 +37,7 @@ wizard_ai/
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/wizard-ai.git
+git clone https://github.com/joanamizrahi-png/cs238_wizard_ai.git
 cd wizard-ai
 
 # No external dependencies needed - uses only Python standard library
