@@ -29,7 +29,7 @@ def test_mcts_single_game():
     winner_idx = scores.index(max(scores))
     print(f"\nWinner: {agents[winner_idx].name}")
     
-    print("\n✅ MCTS test complete!")
+    print("\nMCTS test complete!")
 
 def test_mcts_vs_heuristic():
     """Run multiple games: MCTS vs Heuristic"""
@@ -83,7 +83,7 @@ def test_mcts_vs_heuristic():
     print(f"  Heuristic: {sum(scores['Heuristic'])/num_games:.1f}")
     print(f"  Random:    {sum(scores['Random'])/num_games:.1f}")
     
-    print("\n✅ Tournament complete!")
+    print("\nTournament complete!")
 
 if __name__ == "__main__":
     print("Testing single game with verbose output...\n")
