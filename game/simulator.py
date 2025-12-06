@@ -200,7 +200,7 @@ class WizardGame:
         self.state.trick_leader = winner  # Winner leads next trick
         
         if self.verbose:
-            print(f"  → Player {winner} wins the trick!")
+            print(f"  -> Player {winner} wins the trick!")
             print(f"  Tricks won so far: {self.state.tricks_won}")
     
     def _score_round(self):
@@ -217,5 +217,5 @@ class WizardGame:
             self.scores[player_idx] += round_score
             
             if self.verbose:
-                result = "✓" if bid == won else "✗"
-                print(f"Player {player_idx}: bid {bid}, won {won} → {round_score:+d} {result}")
+                result = "HIT" if bid == won else "MISS"
+                print(f"Player {player_idx}: bid {bid}, won {won} -> {round_score:+d} {result}")
